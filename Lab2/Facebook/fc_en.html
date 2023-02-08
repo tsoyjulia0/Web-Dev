@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin-left: 150px;
+        margin-right: 150px;
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .form{
+        text-align: center;
+        width: 350px;
+        padding: 15px;
+        border-radius: 5px;
+        background: white;
+        margin-left: 60px;
+        box-shadow: 0px 3px 10px 2px rgb(135, 135, 135);
+    }
+
+    .title img {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .title p{
+        color: black;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: left;
+    }
+    .form input{
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 17px;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form button{
+        background: rgb(35, 104, 207);
+        width: 100%;
+        font-size: 20px;
+        font-weight: 650;
+        margin-bottom: 20px;
+        color: rgb(243, 243, 243);
+        border-radius: 5px;
+        padding: 13px 0;
+        border:rgb(224, 221, 221);
+    }
+
+    .form a{
+        color: rgb(35, 104, 207);
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .form .create a {
+        color: rgb(247, 246, 246);
+        font-size: 17px;
+        font-weight: 650;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background: #34a51e;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .form .mess{
+        text-align: right;
+        padding: 10px 20px;
+
+    }
+
+    .footer{
+        margin-top: auto;
+        color: black;
+        box-sizing: border-box;
+        height: 176px;
+        width: 100vw;
+        position: absolute;
+        bottom: -100px;
+        background-color: #fff;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .footer a, .footer p{
+        font-size: 12px;
+        padding: 7px;
+        color: #a6a6a6;
+        text-decoration: none;
+    }
+
+    .footer a:hover{
+        text-decoration: underline;
+    }
+    .footer hr{
+        margin-right: 90px;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <div class="title">
+          <img src="https://i.postimg.cc/NMyj90t9/logo.png" alt="Facebook">
+          <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+
+        <div class="form">
+          <form action="#">
+            <input type="text" placeholder="Email or phone number">
+            <input type="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <a href="">Forgot password?></a>
+          </form>
+          <hr>
+          <div class="create">
+            <a href="" target="_blank">Create new account</a>
+          </div>
+        </div>
+      </div>
+
+    <footer class="footer"><a href="http://127.0.0.1:5500/fc_en.html">English (US)</a>
+        <a href="http://127.0.0.1:5500/f.ru.html">Русский</a><a href="http://127.0.0.1:5500/f.tu.html">Türkçe</a>
+        <hr>
+        <p>Meta © 2023 </p>
+    </footer>
+
+</body>
+</html>
