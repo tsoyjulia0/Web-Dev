@@ -45,9 +45,9 @@ function displayTodos() {
         const delBtn = document.createElement("i");
 
         listElement.textContent = item.todoText;
-        listElement.setAttribute("data-id", item.id);
+        listElement.setAttribute("item", item.id);
 
-        delBtn.setAttribute("data-id", item.id);
+        delBtn.setAttribute("item", item.id);
         delBtn.classList.add("far", "fa-trash-alt");
 
         if (item.isDone) {
@@ -55,11 +55,11 @@ function displayTodos() {
         }
 
         listElement.addEventListener("click", function(e) {
-            doneTodo(e.target.getAttribute("data-id"));
+            doneTodo(e.target.getAttribute("item"));
         });
 
         delBtn.addEventListener("click", function(e) {
-            deleteItem(e.target.getAttribute("data-id"));
+            deleteItem(e.target.getAttribute("item"));
         });
 
         listElement.appendChild(delBtn);
