@@ -1,0 +1,13 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+  <h4>{{product.like}}</h4>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+  <button type="button" (click) = "addLike(product)">Like</button>
+  <button type="button" (click) = "removeItem(product)" style="background-color: rgb(224,28,28)">Remove</button>
+
+
+</div>
